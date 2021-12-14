@@ -1,0 +1,6 @@
+useComplexe: useComplexe.o  complexe.o
+	gcc -Wall -lm useComplexe.o complexe.o -o useComplexe
+useComplexe.o: useComplexe.c complexe.h
+	gcc -Wall -c useComplexe.c
+complexe.o: complexe.c complexe.h
+	gcc -Wall -c complexe.c
