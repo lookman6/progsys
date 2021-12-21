@@ -13,4 +13,12 @@ if( pid > 0 )
 for( i=0; i < 1000; i++ )
 printf("\t\t\tPARENT %d\n", i);
 }
+else
+{
+/* child */
+for( i=0; i < 1000; i++ )
+printf( "CHILD %d\n", i );
 }
+return 0;
+}
+
